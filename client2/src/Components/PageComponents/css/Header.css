@@ -1,0 +1,12 @@
+.navbar{
+    width: 100%;
+}
+.logOut a{
+    color: white;
+}
+.logOut a:hover{
+    text-decoration: none;
+}
+.alink{
+    text-decoration: none;
+}

@@ -1,0 +1,23 @@
+[dir='rtl']{
+	.overlay-gadient-white{
+        &:after{
+            left:auto;
+            right:0;
+            background: -moz-linear-gradient(right,  rgba(255,255,255,0.31) 0%, rgba(255,255,255,0.34) 1%, rgba(255,255,255,1) 25%);
+            background: -webkit-linear-gradient(right,  rgba(255,255,255,0.31) 0%,rgba(255,255,255,0.34) 1%,rgba(255,255,255,1) 25%);
+            background: linear-gradient(to left,  rgba(255,255,255,0.31) 0%,rgba(255,255,255,0.34) 1%,rgba(255,255,255,1) 25%);
+        }
+    }
+    .overlay-gadient-sec{
+        &:after{
+            left:auto;
+            right:0;
+            background: -moz-linear-gradient(right,  rgba(25,36,54,0.31) 0%, rgba(25,36,54,0.34) 1%, rgba(25,36,54,1) 25%);
+            background: -webkit-linear-gradient(right,  rgba(25,36,54,0.31) 0%,rgba(25,36,54,0.34) 1%,rgba(25,36,54,1) 25%);
+            background: linear-gradient(to left,  rgba(25,36,54,0.31) 0%,rgba(25,36,54,0.34) 1%,rgba(25,36,54,1) 25%);
+        }
+    }
+	.layout-dark .overlay-gadient-white::after {
+		background: linear-gradient(to right, rgba(0, 0, 0, 0.31) 0%, rgba(0, 0, 0, 0.34) 1%, rgb(14, 24, 40) 25%);
+	}
+}

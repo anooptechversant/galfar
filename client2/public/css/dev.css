@@ -1,0 +1,14 @@
+.messagecard{
+    float: right;
+}
+.message-body{
+    padding-right: 35px;
+    padding-left: 25px;
+}
+
+.chck-b{
+    margin-right: 10px;
+}
+.cursor-s{
+    cursor: pointer;
+}

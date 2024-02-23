@@ -1,0 +1,7 @@
+.loadImageLogin{
+    width: 50%;
+}
+.loginError{
+    color: red;
+    margin-bottom: 10px !important;
+}

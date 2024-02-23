@@ -1,0 +1,20 @@
+.dash{
+    margin-left: 10px;
+    color: white !important;
+    text-decoration: none;
+}
+.dash a{
+    color: white;
+}
+.dash a:hover{
+    text-decoration: none;
+}
+.comp{
+    margin-left: 10px;
+}
+.sideLink a{
+    color: black;
+}
+.sideLink a:hover{
+    text-decoration: none;
+}

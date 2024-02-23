@@ -1,0 +1,393 @@
+import React from 'react'
+import Swiper from "react-id-swiper";
+import "./Assets/vendor/aos/aos.css"
+import "./Assets/vendor/swiper/swiper-bundle.min.css"
+import "./Assets/vendor/magnific-popup/magnific-popup.min.css"
+import "./Assets/css/style.css"
+import "./Assets/css/skin/skin-1.css"
+import {Helmet} from "react-helmet";
+import Logo from './Assets/images/logo.png'
+import LogoWhite from './Assets/images/logo-white.png'
+import Slider1 from './Assets/images/main-slider/slider1.jpg'
+import Slider2 from './Assets/images/main-slider/slider2.jpg'
+import Slider3 from './Assets/images/main-slider/slider3.jpg'
+import About from './Assets/images/about/hq.jpg'
+import Bg1 from './Assets/images/background/bg1.jpg'
+import Bg2 from './Assets/images/background/bg2.jpg'
+import Civil1 from './Assets/images/work/civil/pic3.jpg'
+import Infra1 from './Assets/images/work/infra/pic3.jpg'
+import Energy1 from './Assets/images/work/energy/pic3.jpg'
+import Twitter from './Assets/images/twitter-white.png'
+import Threads from './Assets/images/thread.png'
+
+
+function Home() {
+    <Helmet>
+        
+        <script src="./Assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="./Assets/vendor/magnific-popup/magnific-popup.js"></script>
+        <script src="./Assets/vendor/counter/waypoints-min.js"></script>
+        <script src="./Assets/vendor/counter/counterup.min.js"></script>
+        <script src="./Assets/vendor/swiper/swiper-bundle.min.js"></script>
+        <script src="./Assets/vendor/aos/aos.js"></script>
+        <script src="./Assets/js/dz.carousel.js"></script>
+        <script src="./Assets/js/dz.ajax.js"></script>
+        <script src='https://www.google.com/recaptcha/api.js'></script>
+    </Helmet>
+    const slideStyle = {
+        backgroundImage: `url(${Slider1})`,
+        backgroundSize: 'cover'
+    };
+    const slideStyle2 = {
+        backgroundImage: `url(${Slider2})`,
+        backgroundSize: 'cover'
+    };
+    const slideStyle3 = {
+        backgroundImage: `url(${Slider3})`,
+        backgroundSize: 'cover'
+    };
+    const backGround1 = {
+        backgroundImage: `url(${Bg1})`
+    }
+    const backGround2 = {
+        backgroundImage: `url(${Bg2})`,
+        backgroundSize:'cover',
+        backgroundPosition:'top'
+    }
+    const params = {
+        slidesPerView: 1,
+        loop: true,
+        autoplay: {
+            delay: 3000,
+            disableOnInteraction: false
+        }
+    };
+    const slides = [
+        { src: "./Assets/images/main-slider/slider1.jpg", index: 0 },
+        { src: "./Assets/images/main-slider/slider2.jpg", index: 1 },
+        { src: "./Assets/images/main-slider/slider3.jpg", index: 2 }
+    ];
+  return (
+    <div id='bg'>
+        <div className="page-wraper">
+            <header className="site-header mo-left header header-transparent style-2">
+                <div className="top_bar">
+                    <div className="container-fluid clearfix">
+                        <div className="top_mnu_flx">
+                            <div className="right_cont_sec">
+                                <ul className="tp_cont">
+                                    <li><a href="tel:96824525000"><i className="fas fa-mobile-alt"></i><p>+968 24525000</p></a></li>
+                                    <li><a href="mailto:info@galfar.com"><i className="far fa-envelope"></i><p> INFO@GALFAR.COM</p></a></li>
+                                </ul>
+                            </div>
+                            <ul className="nav navbar-nav navbar navbar-left show">	
+								<li><a href="https://galfar.zohorecruit.com/jobs/Careers" target="_blank">CAREER</a></li>
+								<li><a href="contact-us.html">CONTACT US</a></li>
+								<li><a href="#" className="btn btn-primary">عربي</a></li>	
+							</ul>
+                        </div>
+                    </div>
+                </div>
+                <div className="sticky-header main-bar-wraper navbar-expand-lg">
+                    <div className="main-bar clearfix ">
+                        <div className="container-fluid clearfix">
+                            <div className="logo-header mostion logo-dark">
+                               <img src={Logo} alt=""/>
+                            </div>
+                            <div className="logo-header mostion logo-white">
+                                <img src={LogoWhite} alt=""/>
+                            </div>
+                            <button className="navbar-toggler collapsed navicon justify-content-end" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </button>
+                            <div className="extra-nav">
+                                <div className="extra-cell">
+                                    <ul>
+                                        <li>
+                                            <a className="search-link" id="quik-search-btn" href="javascript:void(0);">
+                                                <i className="fas fa-search"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div className="dz-quik-search">
+                                <form action="#">
+                                    <input name="search" value="" type="text" className="form-control" placeholder="Enter Your Keyword ..." />
+                                    <span id="quik-search-remove"><i className="ti-close"></i></span>
+                                </form>
+                            </div>
+                            <div className="full-sidenav">
+                                <div className="flsbg">
+                                    <span className="bg-wrap">
+                                        <span></span>
+                                    </span>
+                                    <span className="bg-wrap">
+                                        <span></span>
+                                    </span>
+                                    <span className="bg-wrap">
+                                        <span></span>
+                                    </span>
+                                </div>
+                                <div className="container">
+                                    <div className="row">
+								        <div className="col-lg-6">
+									        <div className="service-list">
+                                                <ul>
+                                                    <li>
+                                                        <i className="la la-phone"></i>
+                                                        <span>Make A Call</span>
+                                                        <h4 className="title">+1800-001-658</h4>
+                                                    </li>
+                                                    <li>
+                                                        <i className="la la-clock-o"></i>
+                                                        <span>Email Address</span>
+                                                        <h4 className="title">Website@info.com</h4>
+                                                    </li>
+                                                    <li>
+                                                        <i className="la la-map"></i>
+                                                        <span>Location</span>
+                                                        <h4 className="title">Envato Pty Ltd 13/2 Permanent <br/> St Melbourne </h4>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div className="social-menu">
+                                                <ul>
+                                                    <li><a className="fab fa-facebook-f" href="https://www.facebook.com/"></a></li>
+                                                    <li><a className="fab fa-twitter" href="https://twitter.com/?lang=en"></a></li>
+                                                    <li><a className="fab fa-linkedin-in" href="https://www.linkedin.com/"></a></li>
+                                                    <li><a className="fab fa-instagram" href="https://www.instagram.com/?hl=en"></a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div className="col-lg-6">
+                                            <h4>About Us</h4>
+                                            <p>Aliquam erat volutpat. Nunc erat massa, porttitor vel egestas sit amet, tristique at massa. Donec posuere odio neque, in ultricies lorem aliquet eu. Donec venenatis libero a nulla placerat egestas.</p>
+                                            <a href="about-us.html" className="btn btn-primary">READ MORE</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="header-nav navbar-collapse collapse justify-content-end" id="navbarNavDropdown">
+                                <div className="logo-header logo-dark">
+                                    <img src={{Logo}} alt=""/>
+                                </div>
+                                <ul className="nav navbar-nav navbar navbar-left">	
+                                    <li><a href="index.html">Home</a></li>
+                                    <li className="sub-menu-down"><a href="javascript:void(0);"><span>About Us</span></a>
+                                        <ul className="sub-menu">
+                                            <li><a href="about-us.html">About Galfar</a></li>
+                                            <li><a href="history.html">Our History</a></li>
+                                            <li><a href="chairman-message.html">Chairman Message</a></li>
+                                            <li><a href="CEO-message.html">CEO Message</a></li>
+                                            <li><a href="board.html">Board of Directors (BOD)</a></li>
+                                        </ul>
+                                    </li>
+                                    <li className="sub-menu-down"><a href="javascript:void(0);"><span>Business Units</span></a>
+                                        <ul className="sub-menu">
+                                            <li><a href="energy-industry.html">Energy & Industrial</a></li>
+                                            <li><a href="civil-environment.html">Civil & Environmental</a></li>
+                                            <li><a href="infrastructure.html">Infrastructure</a></li>
+                                            <li><a href="project-services-unit.html">Project Services</a></li>
+                                        </ul>
+                                    </li>
+                                    <li className="sub-menu-down"><a href="javascript:void(0);"><span>Support Units</span></a>
+                                        <ul className="sub-menu">
+                                            <li><a href="strategy-business-development.html">Strategy & Business Development</a></li>
+                                            <li><a href="human-capital.html">Human Capital (HC)</a></li>
+                                            <li><a href="finance-treasury-information-technology.html">Finance, Treasury & Information Technology</a></li>
+                                            <li><a href="supply-chain-management-unit.html">Supply Chain Management</a></li>
+                                            <li><a href="quality-health-safety-security-environment.html">Quality, Health, Safety, Security & Environment</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="in-country-value.html">In-Country Value</a></li>
+                                    <li><a href="news.html">News</a></li>
+                                    <li className="sub-menu-down"><a href="javascript:void(0);"><span>Partners</span></a>
+                                        <ul className="sub-menu">
+                                            <li><a href="vendor-registration-system.html">Vendor Registration</a></li>
+                                            <li><a href="clients.html">Key Clients</a></li>
+                                        </ul>
+                                    </li>
+                                    <li className="sub-menu-down"><a href="javascript:void(0);"><span>Investor Relations</span></a>
+                                        <ul className="sub-menu">
+                                            <li><a href="financial-performance.html">Financial Performance</a></li>
+                                            <li><a href="annual-reports.html">Annual Reports</a></li>
+                                            <li><a href="esg-reports.html">ESG Reports</a></li>
+                                            <li><a href="IR-contact.html">Investors Relations Contact</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="projects.html">Projects</a></li>
+                                </ul>
+                                <div className="dz-social-icon">
+                                    <ul>
+                                        <li><a className="fab fa-facebook-f" href="https://www.facebook.com/"></a></li>
+                                        <li><a className="fab fa-twitter" href="https://twitter.com/?lang=en"></a></li>
+                                        <li><a className="fab fa-linkedin-in" href="https://www.linkedin.com/"></a></li>
+                                        <li><a className="fab fa-instagram" href="https://www.instagram.com/?hl=en"></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <div className="page-content bg-white">
+                <div className="main-slider2">
+			        <div className="swiper-container main-slider-2 banner-inner swiper-container-initialized swiper-container-horizontal swiper-container-pointer-events">
+				        <div className="swiper-wrapper" style={{ transitionDuration: "0ms", transform: "translate3d(-3363px, 0px, 0px)" }}
+                            id="swiper-wrapper-453108a771f473581" aria-live="off">
+                            <div className="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active" style={{ backgroundImage: `url(./Assets/images/main-slider/slider3.jpg)`, backgroundSize: "cover", width: "1121px" }} dataSwiperSlideIndex={2} role={"group"} ariaLabel={"1 / 5"}>
+						        <div className="banner-content container">
+							        <div className="row">
+								        <div className="col-lg-9">
+									        <h1 className="title" dataSwiperParallax={-500} style={{ transitionDuration: "0ms", transform: "translate3d(-500px, 0px, 0px)" }}>Galfar</h1>
+									        <p dataSwiperParallax={-1000} style={{ transitionDuration: "0ms", transform: "translate3d(-1000px, 0px, 0px)" }}>Galfar Engineering &amp; Contracting SAOG is one of the largest, multi-disciplined engineering, contracting and construction company in the Sultanate of Oman. Established in the year 1972, Galfar Engineering &amp; Contracting SAOG, has today grown into one of the largest construction companies in the Middle East.</p>
+									        <a dataSwiperParallax={-1500} href={"about-us.html"} className={"btn btn-primary"} style={{ transitionDuration: "0ms", transform: "translate3d(-1500px, 0px, 0px)" }}>READ MORE <i className="fas fa-long-arrow-alt-right m-l15"></i></a>
+								        </div>
+							        </div>
+						        </div>
+					        </div>
+					        <div className="swiper-slide swiper-slide-duplicate-next" style={{ backgroundImage: `url(./Assets/images/main-slider/slider1.jpg)`, backgroundSize: "cover", width: "1121px" }} dataSwiperSlideIndex={0} role={"group"} ariaLabel={"2 / 5"}>
+                                <div className="banner-content container">
+                                    <div className="row">
+                                        <div className="col-lg-9">
+                                            <h1 className="title" dataSwiperParallax={-500} style={{ transitionDuration: "0ms", transform: "translate3d(-500px, 0px, 0px)" }}>Galfar</h1>
+                                            <p dataSwiperParallax={-1000} style={{ transitionDuration: "0ms", transform: "translate3d(-1000px, 0px, 0px)" }}>Galfar Engineering &amp; Contracting SAOG is one of the largest, multi-disciplined engineering, contracting and construction company in the Sultanate of Oman. Established in the year 1972, Galfar Engineering &amp; Contracting SAOG, has today grown into one of the largest construction companies in the Middle East.</p>
+                                            <a dataSwiperParallax={-1500} href={"about-us.html"} className={"btn btn-primary"} style={{ transitionDuration: "0ms", transform: "translate3d(-1500px, 0px, 0px)" }}>READ MORE <i className="fas fa-long-arrow-alt-right m-l15"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+					        </div>
+					        <div className="swiper-slide swiper-slide-prev" style={{ backgroundImage: `url(./Assets/images/main-slider/slider2.jpg)`, backgroundSize: "cover", width: "1121px" }} dataSwiperSlideIndex={1} role={"group"} ariaLabel={"3 / 5"}>
+                                <div className="banner-content container">
+                                    <div className="row">
+                                        <div className="col-lg-9">
+                                            <h1 className="title" dataSwiperParallax={-500} style={{ transitionDuration: "0ms", transform: "translate3d(-500px, 0px, 0px)" }}>Galfar</h1>
+                                            <p dataSwiperParallax={-1000} style={{ transitionDuration: "0ms", transform: "translate3d(-1000px, 0px, 0px)" }}>Galfar Engineering &amp; Contracting SAOG is one of the largest, multi-disciplined engineering, contracting and construction company in the Sultanate of Oman. Established in the year 1972, Galfar Engineering &amp; Contracting SAOG, has today grown into one of the largest construction companies in the Middle.</p>
+                                            <a dataSwiperParallax={-1500} href={"about-us.html"} className={"btn btn-primary"} style={{ transitionDuration: "0ms", transform: "translate3d(-1500px, 0px, 0px)" }}>READ MORE <i className="fas fa-long-arrow-alt-right m-l15"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+					        </div>
+					        <div className={"swiper-slide swiper-slide-active"} style={{ backgroundImage: `url(./Assets/images/main-slider/slider3.jpg)`, backgroundSize: "cover", width: "1121px" }} dataSwiperSlideIndex={2} role={"group"} ariaLabel={"4 / 5"}>
+                                <div className="banner-content container">
+                                    <div className="row">
+                                        <div className="col-lg-9">
+                                            <h1 className="title" dataSwiperParallax={-500} style={{ transitionDuration: "0ms", transform: "translate3d(0px, 0px, 0px)" }}
+                                            >Galfar</h1>
+                                            <p dataSwiperParallax={-1000} style={{ transitionDuration: "0ms", transform: "translate3d(0px, 0px, 0px)" }}>Galfar Engineering &amp; Contracting SAOG is one of the largest, multi-disciplined engineering, contracting and construction company in the Sultanate of Oman. Established in the year 1972, Galfar Engineering &amp; Contracting SAOG, has today grown into one of the largest construction companies in the Middle East.</p>
+                                            <a dataSwiperParallax={-1500} href={"about-us.html"} className={"btn btn-primary"} style={{ transitionDuration: "0ms", transform: "translate3d(0px, 0px, 0px)" }}
+                                            >READ MORE <i className="fas fa-long-arrow-alt-right m-l15"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+					        </div>
+				            <div className="swiper-slide swiper-slide-duplicate swiper-slide-next" style={{ backgroundImage: `url(./Assets/images/main-slider/slider1.jpg)`, backgroundSize: "cover", width: "1121px" }} dataSwiperSlideIndex={0} role={"group"} ariaLabel={"5 / 5"}>
+                                <div className="banner-content container">
+                                    <div className="row">
+                                        <div className="col-lg-9">
+                                            <h1 className="title" dataSwiperParallax={-500} style={{ transitionDuration: "0ms", transform: "translate3d(500px, 0px, 0px)" }}>Galfar</h1>
+                                            <p dataSwiperParallax={-1000} style={{ transitionDuration: "0ms", transform: "translate3d(1000px, 0px, 0px)" }}>Galfar Engineering &amp; Contracting SAOG is one of the largest, multi-disciplined engineering, contracting and construction company in the Sultanate of Oman. Established in the year 1972, Galfar Engineering &amp; Contracting SAOG, has today grown into one of the largest construction companies in the Middle East.</p>
+                                            <a dataSwiperParallax={-1500} href={"about-us.html"} className={"btn btn-primary"} style={{ transitionDuration: "0ms", transform: "translate3d(1500px, 0px, 0px)" }}>READ MORE <i className="fas fa-long-arrow-alt-right m-l15"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+					        </div>
+                        </div>
+				        <div className="swiper-button">
+					        <div className="swiper-button-prev" tabindex="0" role="button" aria-label="Previous slide" aria-controls="swiper-wrapper-453108a771f473581"><i className="las la-angle-left"></i></div>
+					        <div className="swiper-button-next" tabindex="0" role="button" aria-label="Next slide" aria-controls="swiper-wrapper-453108a771f473581"><i className="las la-angle-right"></i></div>
+				        </div>
+			            <span className="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+                    </div>
+		        </div>
+            </div>
+            <footer className="site-footer style-1" id="footer">
+			    <div className="footer-top">
+				    <div className="container">
+					    <div className="row">
+						    <div className="col-xl-3 col-lg-3 col-sm-4">
+							    <div className="widget widget_about">
+								    <div className="footer-logo logo-white">
+									    <a href="index.html"><img src={LogoWhite} alt="" /></a> 
+								    </div>
+								    <p>Galfar is one of the largest, multi-disciplined engineering, contracting &amp; construction company in the sultanate Oman.</p>
+								    <div className="dz-social-icon">
+									    <ul>
+										    <li><a className="fab fa-linkedin-in" href="#"></a></li>
+										    <li><a className="" href="#"><img src={Twitter} /></a></li>
+										    <li><a className="fab fa-facebook-f" href="#"></a></li>
+										    <li><a className="" href="#"><img src={Threads} /></a></li>
+										    <li><a className="fab fa-youtube" href="#"></a></li>
+									    </ul>
+								    </div>
+							    </div>
+						    </div>
+						    <div className="col-xl-4 col-lg-3 col-sm-6 col-6">
+							    <div className="widget widget_services">
+								    <h4 className="footer-title">EXPLORE</h4>
+								    <ul className="list-2">
+									    <li><a href="about-us.html">About us</a></li>
+									    <li><a href="vendor-registration-system.html">Vendor Registration</a></li>
+									    <li><a href="https://galfar.zohorecruit.com/jobs/Careers" target="_blank">Careers</a></li>
+									    <li><a href="in-country-value.html">In-Country Value</a></li>
+									    <li><a href="news.html">News</a></li>
+								    </ul>
+							    </div>
+						    </div>
+						    <div className="col-xl-2 col-lg-3 col-sm-4 col-6">
+							    <div className="widget widget_services">
+								    <h4 className="footer-title">Business Units</h4>
+								    <ul>
+									    <li><a href="energy-industry.html">Energy &amp; Industrial</a></li>
+									    <li><a href="civil-environment.html">Civil &amp; Environmental</a></li>
+									    <li><a href="infrastructure.html">Infrastructure</a></li>
+									    <li><a href="project-services-unit.html">Project Services</a></li>
+								    </ul>
+							    </div>
+						    </div>
+						    <div className="col-xl-3 col-lg-3 col-sm-6">
+							    <div className="widget widget_about">
+								    <h4 className="footer-title">Contact Us</h4>
+									<div className="widget widget_getintuch">
+										<ul>
+											<li>
+												<i className="flaticon-placeholder"></i>
+										    		<span>PO. Box: 533, PC: 100, Muscat, Sultanate of Oman</span>
+											</li>
+											<li>
+												<i className="flaticon-call"></i>
+												<span>+968 24525000<br/> +968 24525224</span>
+											</li>
+											<li>
+												<i className="flaticon-chat-1"></i> 
+												<span>info@galfar.com <br/>galfar@galfar.com</span>
+											</li>
+										</ul>
+									</div>
+							    </div>
+						    </div>
+					    </div>
+				    </div>
+			    </div>
+			    <div className="footer-bottom text-center">
+				    <div className="container">
+					    <div className="ft-inner">
+						    <div className="row">
+							    <div className="col-lg-12"> 
+								    <span className="copyright-text">Copyright © 2023  All rights reserved GALFAR. Another creation of <a href="https://qanater.net" target="_blank">Qanater</a>.</span> 
+                                </div>
+						    </div>
+					    </div>
+				    </div>
+			    </div>
+		    </footer>
+        </div>
+    </div>
+  )
+}
+
+export default Home

@@ -1,0 +1,37 @@
+.errorLabel{
+    color: red;
+}
+.example {
+    margin: 1em 0;
+    text-align: center;
+    margin: 10px;
+  }
+  
+  .example img {
+    width: 10vw;
+    height: 10vw;
+  }
+  
+  .example-cover img {
+    object-fit: cover;
+  }
+  
+  .example-contain img {
+    object-fit: contain;
+  }
+  .imageClass{
+    height:300px;
+    width:300px;
+  }
+  .trash-cls{
+    cursor: pointer;
+  }
+  .image-input{
+    margin-top: 10px;
+  }
+  .save-button{
+    margin-top: 10px;
+  }
+  .imageClass{
+    margin-right: 10px;
+  }
